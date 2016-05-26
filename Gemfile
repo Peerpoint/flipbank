@@ -16,8 +16,8 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'font-awesome-sass'
 gem 'devise'
 gem 'simple_form'
-gem 'rails_12factor', group: :production
-gem 'pg', group: :production
+# gem 'rails_12factor', group: :production
+gem 'mysql2', group: :production
 
 
 # Use ActiveModel has_secure_password
