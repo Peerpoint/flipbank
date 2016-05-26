@@ -1,0 +1,108 @@
+<%= render 'layouts/header' %>
+
+<div class="jumbotron">
+    <div class="container">
+        <p class= "hero">BUY...FIX...PROFIT
+        <br>
+        <%= link_to '<button type="button" class="btn btn-lg btn-default">Create Account</button>'.html_safe, new_user_registration_path %>
+        <%= link_to '<button type="button" class="btn btn-lg btn-success">Submit A Deal</button>'.html_safe, new_application_path %>
+    </div>
+</div>
+
+<div class="container">
+    <div class="process">
+        <h3>Discover Why So Many Investors LOVE FlipBank</h3>
+        <h3>If you can dream it...we can fund it</h3>
+        <div class="row">
+            <div class="col-md-6">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/OTHbFb1fNy4" frameborder="0" allowfullscreen></iframe>
+            </div>  
+            <div class="col-md-6">
+                
+                <h3>Fast, creative financing solutions for real estate investors nationwide!</h3>
+                <span class="glyphicon glyphicon-ok"></span>&nbsp;<p="callout"> Whether you are a wholesaling, flipping, rehabbing or buying to hold, we offer solutions to fit your criteria</p>
+                <span class="glyphicon glyphicon-ok"></span>&nbsp;<p="callout"> Equity based: we fund based on the deal - bring us a good deal and we will work to get it funded!</p>
+                <span class="glyphicon glyphicon-ok"></span>&nbsp;<p="callout"> Application process is Quick and easy. Apply today. Get funded fast!</p>
+                <span class="glyphicon glyphicon-ok"></span>&nbsp;<p="callout"> We are the largest private money lender in the country! We only work with real estate investors.</p>
+                <h3>We get it! We provide the house flipping loans you need.  Fast and easy!</h3>
+            </div>
+   </div>
+</div>
+</div>
+    
+<!--Products offered-->
+<div class="product center">
+    <div class="container">
+    <h3>We Have the Perfect Loan Product For Every Stage of Your Investment Cycle</h3><br>
+    <div class="row">
+       
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <%= image_tag("boardup1.jpeg", size: "120%") %>
+      <div class="caption">
+        <h3>Rehab Lending</h3><br>
+        <p>Found A great deal? We will fund up to 90% of the purchase price and 100% of the rehab costs. Whether you are looking to do one flip a year or one hundred, we will walk you through the process and quickly give you the funds you need to make a profit.  </p><br><br>
+        <p><%= link_to '<button type="button" class="btn btn-sm btn-success">Learn More</button>'.html_safe, about_path %></p>
+      </div>
+    </div>
+  </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <%= image_tag("rehab2.jpeg", size: "120%") %>
+                  <div class="caption">
+                    <h3>Bridge Loans</h3><br>
+                        <p>Borrowed money for your flip from friends, family or another lender & need a short-term loan to hold you over until you sell the property? Our short-term interest-only loans give you the time to get top price for your rehab project without feeling squeezed.</p><br><br>
+                        <p><%= link_to '<button type="button" class="btn btn-sm btn-success">Learn More</button>'.html_safe, about_path %></p>
+                  </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <%= image_tag("homes1.jpeg", size: "120%") %>
+                  <div class="caption">
+                    <h3>Term Loans</h3><br>
+                        <p>Why get rid of a great income producing property? We can help you structure loan term financing to allow you to capture long term monthly cash flow.  We can also combine all out properties into one loan monthl payment. Plus we have great rates! </p><br><br>
+                        <p><%= link_to '<button type="button" class="btn btn-sm btn-success">Learn More</button>'.html_safe, about_path %></p>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!--CTA-->
+<div class="cta1 center">
+    <div class="row">
+        <div class="col-md-5">
+            
+            <h2>Is it REALLY a good deal?</h2>
+            <p>Use the FlipBank Analyzer to find out</p><br>
+            <p>Never do another bad deal again!</p><br>
+            <%= link_to '<button type="button" class="btn btn-lg btn-success">Use the FlipBank Analyzer</button>'.html_safe, about_path %>
+        </div>
+        <div class="col-md-7">
+            <%= image_tag("macbook.jpeg", size: "100%") %>
+        </div>
+    </div>
+</div>
+
+<!--project examples and testimonials-->
+<div class="flippro center">
+    <div class="container">
+    <h2>Want to take your Flipping career to the next level?</h2>
+    <p>Let us help you go from flipping one or two deals a year to 10+ per month.  We offer experienced flippers the resources and guidance to do more deals with lower capital costs.  We can fund deals from $150K to $50 million.  Register now to learn more.</p>
+    <h3>Do You have what it takes to be a FlipBank PRO?</h3><br>
+    <%= link_to '<button type="button" class="btn btn-lg btn-success">Become a FlipBank PRO Today</button>'.html_safe, about_path %>
+    </div>
+</div>
+
+
+<!--Rehab Buyers Club Link-->
+<div class="projects center">
+    <h3>Searching for great deals?</h3>
+    <p>Get access to top deals before they hit the market</p>
+    <h3>Rehab Buyers Club Logo</h3>
+    <%= link_to '<button type="button" class="btn btn-lg btn-primary">Join The Rehab Buyers Club</button>'.html_safe, about_path %>
+</div>
+</div>
+
+<%= render 'layouts/footer' %>  

@@ -1,0 +1,59 @@
+
+
+<h1>Listing Applications</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Coll address</th>
+      <th>Guarantor</th>
+      <th>Phone</th>
+      <th>Email</th>
+      <th>Trans type</th>
+      <th>Lien position</th>
+      <th>Gross loan</th>
+      <th>Liens paid</th>
+      <th>Cash out</th>
+      <th>Holdback</th>
+      <th>Equity</th>
+      <th>Closing costs</th>
+      <th>Due diligence</th>
+      <th>Appraisal</th>
+      <th>Dd fee rebate</th>
+      <th>Processing fee</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @applications.each do |application| %>
+      <tr>
+        <td><%= application.coll_address %></td>
+        <td><%= application.bizname %></td>
+        <td><%= application.bizadd %></td>
+        <td><%= application.guarantor %></td>
+        <td><%= application.phone %></td>
+        <td><%= application.email %></td>
+        <td><%= application.trans_type %></td>
+        <td><%= application.lien_position %></td>
+        <td><%= application.gross_loan %></td>
+        <td><%= application.liens_paid %></td>
+        <td><%= application.cash_out %></td>
+        <td><%= application.holdback %></td>
+        <td><%= application.equity %></td>
+        <td><%= application.closing_costs %></td>
+        <td><%= application.due_diligence %></td>
+        <td><%= application.appraisal %></td>
+        <td><%= application.dd_fee_rebate %></td>
+        <td><%= application.processing_fee %></td>
+        <td><%= link_to 'Show', application %></td>
+        <td><%= link_to 'Edit', edit_application_path(application) %></td>
+        <td><%= link_to 'Destroy', application, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Application', new_application_path %>

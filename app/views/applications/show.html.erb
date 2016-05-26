@@ -1,0 +1,238 @@
+
+<div class="container">
+    <div class="fundingapp1">
+      <h3>Review your answers & Get a Term Sheet</h3> 
+      <p>Please take a moment to quickly review your application</p><br>
+    </div>
+    
+    
+    <div class="panel panel-primary">
+        <div class="panel-heading">Step 1 - Tell Us About yourself</div>
+            <table class="table table-hover">
+                <tr>
+                    <td><strong>First Name:</strong></td>
+                    <td><%= @application.fname %></td>
+                    <td><strong>Are you a first time flipper?:</strong></td>
+                    <td><%= @application.firsttime %></td>
+                </tr>
+                <tr>
+                    <td><strong>Last Name:</strong></td>
+                    <td><%= @application.lname %></td>
+                    <td><strong>Number of Properties you currently own?:</strong></td>
+                    <td><%= @application.propsown %></td>
+                </tr>
+                <tr>
+                    <td><strong>Home Address:</strong></td>
+                    <td><%= @application.home_address %></td>
+                    <td><strong>Number of Properties puchased last 6 months:</strong></td>
+                    <td><%= @application.purchsixmo %></td>
+                </tr>
+                <tr>
+                    <td><strong>City:</strong></td>
+                    <td><%= @application.hcity %></td>
+                    <td><strong>Number of Properties puchased last 12 months?:</strong></td>
+                    <td><%= @application.purchtwevelemo %></td>
+                </tr>
+                <tr>
+                    <td><strong>State:</strong></td>
+                    <td><%= @application.hstate %></td>
+                    <td><strong>Number of Properties puchased in your lifetime?:</strong></td>
+                    <td><%= @application.purchlife %></td>
+                </tr>
+                <tr>
+                    <td><strong>Zip:</strong></td>
+                    <td><%= @application.hzip %></td>
+                    <td><strong>Whats the average purchase price of a property you buy?:</strong></td>
+                    <td><%= number_to_currency(@application.avg_price, precision: 0) %></td>
+                </tr>
+                <tr>
+                    <td><strong>Best Contact Phone:</strong></td>
+                    <td><%= @application.phone %></td>
+                    <td><strong>Have you acquired over $1.2M or 12 properties in the last 12 months?:</strong></td>
+                    <td><%= @application.twelve_in_tweleve %></td>
+                </tr>
+                <tr>
+                    <td><strong>Personal Email:</strong></td>
+                    <td><%= @application.hemail %></td>
+                    <td><strong>Do you have any unresolved judgments greater than $10K?:</strong></td>
+                    <td><%= @application.bk %></td>
+                </tr>
+                 <tr>
+                    <td><strong>Are you a US citizen?:</strong></td>
+                    <td><%= @application.citizen %></td>
+                    <td><strong>Number of times in the last 24 months you have been 60+ days late on any debt?:</strong></td>
+                    <td><%= @application.sixty_days %></td>
+                </tr>
+                 <tr>
+                    <td><strong>SSN:</strong></td>
+                    <td><%= @application.ssn %></td>
+                    <td><strong>Date of Last Bankruptcy (if Applicaible):</strong></td>
+                    <td><%= @application.bk %></td>
+                </tr>
+                 <tr>
+                    <td><strong>What is your credit score:</strong></td>
+                    <td><%= @application.credit_score %></td>
+                    <td><strong>Date of Last foreclosure or short-sale (if Applicaible):</strong></td>
+                    <td><%= @application.last_fc_ss %></td>
+                </tr>
+            </table>
+        </div>
+
+
+ <div class="panel panel-primary">
+        <div class="panel-heading">Step 2 - Tell Us About the Legal Entity Receiving the Funding</div>
+            <table class="table table-hover">
+                <tr>
+                    <td><strong>Legal Name ("Entity"):</strong></td>
+                    <td><%= @application.bizname %></td>
+                    <td><strong>Main Phone:</strong></td>
+                    <td><%= @application.bizphone %></td>
+                </tr>
+                <tr>
+                    <td><strong>Legal Structure:</strong></td>
+                    <td><%= @application.entity %></td>
+                    <td><strong>Email:</strong></td>
+                    <td><%= @application.bizemail %></td>
+                </tr>
+                <tr>
+                    <td><strong>Business Address:</strong></td>
+                    <td><%= @application.bizadd %></td>
+                    <td><strong>Current As-Is Value of the Property:</strong></td>
+                    <td><%= number_to_currency(@application.as_is_val, precision: 0) %></td>
+                </tr>
+                <tr>
+                    <td><strong>City:</strong></td>
+                    <td><%= @application.bizcity %></td>
+                    <td><strong>Do you have 6 months worth of reserves to pay the loan?:</strong></td>
+                    <td><%= @application.sixmonth_reserves %></td>
+                </tr>
+                <tr>
+                    <td><strong>State:</strong></td>
+                    <td><%= @application.bizstate %></td>
+                    <td><strong>If need be can you personally guarantee the loan?:</strong></td>
+                    <td><%= @application.guarantee %></td>
+                </tr>
+                <tr>
+                    <td><strong>Zip:</strong></td>
+                    <td><%= @application.bizzip %></td>
+                    <td><strong></strong></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+ <div class="panel panel-primary">
+        <div class="panel-heading">Step 3 - Tell Us About the Deal</div>
+            <table class="table table-hover">
+                <tr>
+                    <td><strong>Subject Property Address:</strong></td>
+                    <td><%= @application.coll_address %></td>
+                    <td><strong>Do you have an accepted<br>sales contract on the Property?:</strong></td>
+                    <td><%= @application.contract %></td>
+                </tr>
+                <tr>
+                    <td><strong>City:</strong></td>
+                    <td><%= @application.subcity %></td>
+                    <td><strong>Seller Concessions</strong></td>
+                    <td><%= @application.seller_con %></td>
+                </tr>
+                <tr>
+                    <td><strong>State:</strong></td>
+                    <td><%= @application.substate %></td>
+                    <td><strong>When Does the Contract Expire?</strong></td>
+                    <td><%= @application.contract_exp %></td>
+                </tr>
+                <tr>
+                    <td><strong>Zip:</strong></td>
+                    <td><%= @application.subzip %></td>
+                    <td><strong>Purchase Price that appears on Contract:</strong></td>
+                    <td><%= number_to_currency(@application.salesprice, precision: 0) %></td>
+                </tr>
+                <tr>
+                    <td><strong>PIN:</strong></td>
+                    <td><%= @application.subpin %></td>
+                    <td><strong>Original Date of Purchase:</strong></td>
+                    <td><%= @application.purch_date %></td>
+                </tr>
+                <tr>
+                    <td><strong>Property Type:</strong></td>
+                    <td><%= @application.prop_type %></td>
+                    <td><strong>Original Purchase Price</strong></td>
+                    <td><%= number_to_currency(@application.purch_price, precision: 0) %></td>
+                </tr>
+                 <tr>
+                    <td><strong>Is the property zoned agricultural?:</strong></td>
+                    <td><%= @application.zoned_ag %></td>
+                    <td><strong>Amount of VERIFIABLE Improvements*:</strong></td>
+                    <td><%= number_to_currency(@application.verif_improv, precision: 0) %></td>
+                </tr>
+                 <tr>
+                    <td><strong>Is the property > 4 acres?:</strong></td>
+                    <td><%= @application.fouracres %></td>
+                    <td><strong>Amount of Current Mortgage to be Paid Off:</strong></td>
+                    <td><%= number_to_currency(@application.payoff, precision: 0) %></td>
+                </tr>
+                 <tr>
+                    <td><strong>Is the Property > 2 miles from next nearest subdivision?:</strong></td>
+                    <td><%= @application.miles_sub %></td>
+                    <td><strong>Is there a current bridge/hard<br>money loan on the property now?</strong></td>
+                    <td><%= @application.hard_money %></td>
+                </tr>
+                <tr>
+                    <td><strong>Are local amenities (shopping, restaurants, etc.)<br> > 5 miles from the Property?:</strong></td>
+                    <td><%= @application.fivemiles_amenities %></td>
+                    <td><strong>If yes, list the name and phone of the current funder</strong></td>
+                    <td><%= @application.lender_name %></td>
+                </tr>
+                <tr>
+                    <td><strong>Is the property currently rented?</strong></td>
+                    <td><%= @application.rented %></td>
+                    <td><strong>Is it currently rented Section 8?</strong></td>
+                    <td><%= @application.sectioneight %></td>
+                </tr>
+                <tr>
+                    <td><strong>Is the lease Month-to-Month or Annual?:</strong></td>
+                    <td><%= @application.mtm %></td>
+                    <td><strong>Is there currently a 3rd party management company?:</strong></td>
+                    <td><%= @application.management %></td>
+                </tr>
+                <tr>
+                    <td><strong>If yes, what is the annual fee<br>paid the the management company?:</strong></td>
+                    <td><%= number_to_currency(@application.mgmt_fee, precision: 0) %></td>
+                    <td><strong>Current As-Is Value of the Property</strong></td>
+                    <td><%= number_to_currency(@application.as_is_val, precision: 0) %></td>
+                </tr>
+                <tr>
+                    <td><strong>Rehab Funds needed:</strong></td>
+                    <td><%= number_to_currency(@application.rehab_funds, precision: 0) %></td>
+                    <td><strong>Value of the Property after Rehab</strong></td>
+                    <td><%= number_to_currency(@application.arv, precision: 0) %></td>
+                </tr>
+                <tr>
+                    <td><strong>How are You determining the ARV?:</strong></td>
+                    <td><%= @application.arv_just %></td>
+                    <td><strong>Value of the Property after Rehab</strong></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        </div>
+
+<div class="buttongroup">
+<%= link_to 'Edit', edit_application_path(@application), class:"btn btn-primary" %>
+
+<%= link_to 'Looks Good! Prepare My Term Sheet ', term_sheet_path, class:"btn btn-success" %>
+
+</div><br><br>
+        <!--if purchase-->
+     
+      
+        <!--if refi or bridge-->
+    
+       
+        <!--if rented-->
+       
+      
+      <!--if rehab-->
+      
+    

@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  coll_address: MyString
+  guarantor: MyString
+  phone: MyString
+  email: MyString
+  trans_type: MyString
+  lien_position: MyString
+  gross_loan: 9.99
+  liens_paid: 9.99
+  cash_out: 9.99
+  holdback: 9.99
+  equity: 9.99
+  closing_costs: 9.99
+  due_diligence: 9.99
+  appraisal: 9.99
+  dd_fee_rebate: 9.99
+  processing_fee: 9.99
+
+two:
+  coll_address: MyString
+  guarantor: MyString
+  phone: MyString
+  email: MyString
+  trans_type: MyString
+  lien_position: MyString
+  gross_loan: 9.99
+  liens_paid: 9.99
+  cash_out: 9.99
+  holdback: 9.99
+  equity: 9.99
+  closing_costs: 9.99
+  due_diligence: 9.99
+  appraisal: 9.99
+  dd_fee_rebate: 9.99
+  processing_fee: 9.99
