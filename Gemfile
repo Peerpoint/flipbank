@@ -19,6 +19,7 @@ gem 'simple_form'
 # gem 'rails_12factor', group: :production
 gem 'mysql2', group: :production
 gem 'passenger', group: :production
+gem 'therubyracer', group: :production
 
 
 # Use ActiveModel has_secure_password
